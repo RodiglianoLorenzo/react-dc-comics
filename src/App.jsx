@@ -6,11 +6,11 @@ import AppFooter from './components/AppFooter'
 function App() {
 
   return (
-    <>
+    <div>
       <AppHeader />
       <AppMain />
       <AppFooter />
-    </>
+    </div>
   )
 }
 
