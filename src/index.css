@@ -55,7 +55,7 @@ footer {
   color: white;
   position: relative;
   overflow: hidden;
-
+  z-index: 2;
   .Footer-nav {
     a {
       color: gray;
@@ -66,8 +66,34 @@ footer {
 
   .img-Footer {
     position: absolute;
-    bottom: -60px;
+    bottom: 70px;
     right: 290px;
     width: 600px;
+    z-index: 1;
+  }
+
+  .BtFooter{
+    background-color: #303030;
+
+  }
+
+  .SignUp{
+    border: 2px solid cyan;
+    background-color: #303030;
+    padding: 10px;
+    color: white;
+  }
+
+ 
+
+  .site{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+  }
+  .web{
+     
+    padding: 5px;
   }
 }
