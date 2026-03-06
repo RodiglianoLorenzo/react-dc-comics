@@ -1,42 +1,73 @@
 /* @import "bootstrap/dist/css/bootstrap.css"; */
 @import url('bootstrap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-header{
+
+header {
   display: flex;
   justify-content: space-around;
-  padding: 60px;
-    img{
-      position: relative;
-      top: -40px;
-    }
-    a{
-      padding: 10px;
-      color: black;
-      text-decoration: none;
+  padding: 20px;
+  margin-top: 40px;
 
-    }
-    a:nth-child(2){
-      color: cyan;
-      border-bottom: 3px solid cyan;
-    }
+  img {
+    position: relative;
+    top: -40px;
+  }
+
+  a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+
+  }
+
+  a:nth-child(2) {
+    color: cyan;
+    border-bottom: 3px solid cyan;
+  }
 }
 
-.bg-black{
-    background-color: black;
-    padding: 5px;
+.bg-black {
+  background-color: black;
+  padding: 5px;
 }
-.bg-blue{
-    background-color: blue;
+
+.bg-blue {
+  background-color: blue;
 }
-.container{
+
+.container {
   padding: 45px;
-  .immagine{
+
+  .immagine {
     max-height: 60px;
   }
- 
+
+}
+
+footer {
+  background-image: url('/footer-bg.jpg');
+  max-width: 100%;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  .Footer-nav {
+    a {
+      color: gray;
+      text-decoration: none;
+      display: flex;
+    }
+  }
+
+  .img-Footer {
+    position: absolute;
+    bottom: -60px;
+    right: 290px;
+    width: 600px;
+  }
 }
