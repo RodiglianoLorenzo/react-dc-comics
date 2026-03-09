@@ -56,6 +56,7 @@ footer {
   position: relative;
   overflow: hidden;
   z-index: 2;
+
   .Footer-nav {
     a {
       color: gray;
@@ -72,28 +73,58 @@ footer {
     z-index: 1;
   }
 
-  .BtFooter{
+  .BtFooter {
     background-color: #303030;
 
   }
 
-  .SignUp{
+  .SignUp {
     border: 2px solid cyan;
     background-color: #303030;
     padding: 10px;
     color: white;
   }
 
- 
 
-  .site{
+
+  .site {
     display: flex;
     justify-content: end;
     align-items: end;
-    
+
   }
-  .web{
-     
+
+  .web {
+
     padding: 5px;
+  }
+
+  .BtFooter {
+    background-color: #303030;
+
+    .BtFooter-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .UpFooter {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .img-Footer {
+    position: absolute;
+    bottom: -50px;
+    right: 290px;
+    width: 600px;
+    z-index: 1;
   }
 }

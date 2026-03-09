@@ -57,24 +57,18 @@ export default function AppHeader() {
             </div>
             <div className='BtFooter'>
                 <div className='container'>
-                    <div className='row'>
-                        <div className='col'>
-                            <div className='FooterContainer'>
-                                <button className='SignUp'> SIGN-UP NOW!</button>
-                                
-                            </div>
+                    <div className='BtFooter-row'>
+                        <button className='SignUp'>SIGN-UP NOW!</button>
+                        <div className='social'>
+                            <p>FOLLOW US</p>
+                            <img className='web' src="/footer-facebook.png" alt="" />
+                            <img className='web' src="/footer-twitter.png" alt="" />
+                            <img className='web' src="/footer-youtube.png" alt="" />
+                            <img className='web' src="/footer-pinterest.png" alt="" />
+                            <img className='web' src="/footer-periscope.png" alt="" />
                         </div>
                     </div>
-
-                    <p>FOLLOW US</p>
-                    <nav className='site'>
-                        <img className='web' src="/footer-facebook.png" alt="" />
-                        <img className='web' src="/footer-twitter.png" alt="" />
-                        <img className='web' src="/footer-youtube.png" alt="" />
-                        <img className='web' src="/footer-pinterest.png" alt="" />
-                        <img className='web' src="/footer-periscope.png" alt="" />
-                    </nav>
-                </div >
+                </div>
             </div>
         </footer >
     )
