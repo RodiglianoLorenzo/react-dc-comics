@@ -11,10 +11,10 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
   margin-top: 40px;
 
   img {
+    margin-top: 20px;
     position: relative;
     top: -40px;
   }

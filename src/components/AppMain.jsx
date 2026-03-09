@@ -165,15 +165,14 @@ export default function AppMain() {
 
             <div className='bg-black'>
                 <div className="container">
-                   
                     <div className="Series">CURRENT SERIES</div>
                     <div className='row '>
-                        {comics.map((comic) =>
-                            <div className="col bg-black col-6 col-sm-4 col-md-3 col-lg-2">
-                                <img className='imgthumb img-fluid' key={comic.id} src={comic.thumb}></img>
+                        {comics.map((comic) => (
+                            <div key={comic.id} className="col bg-black col-6 col-sm-4 col-md-3 col-lg-2">
+                                <img className='imgthumb' src={comic.thumb} alt={comic.title} />
                                 <p>{comic.title}</p>
                             </div>
-                        )}
+                        ))}
                     </div>
                     <button className='load'>LOAD MORE</button>
                 </div>
