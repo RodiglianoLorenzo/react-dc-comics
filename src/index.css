@@ -115,6 +115,7 @@ footer {
   overflow: hidden;
   z-index: 2;
 
+  
   .Footer-nav {
     a {
       color: gray;
@@ -184,5 +185,9 @@ footer {
     right: 290px;
     width: 600px;
     z-index: 1;
+  }
+
+  ul{
+    list-style-type: none;
   }
 }
