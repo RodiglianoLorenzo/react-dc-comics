@@ -10,6 +10,7 @@
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px;
   margin-top: 40px;
 
@@ -18,14 +19,20 @@ header {
     top: -40px;
   }
 
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
   a {
     padding: 10px;
     color: black;
     text-decoration: none;
-
   }
 
-  a:nth-child(2) {
+  a.active {
     color: cyan;
     border-bottom: 3px solid cyan;
   }
@@ -43,28 +50,61 @@ header {
   height: 520px;
 }
 
+.Series {
+  background-color: #0099ff;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  display: inline-block;
+  transform: translateY(-50px);
+}
+
+
+
 .bg-black {
   background-color: black;
   padding: 5px;
-  
-  .imgthumb{
+ 
+  p {
+    color: white;
+  }
+
+  .imgthumb {
     max-width: 150px;
     max-height: auto;
     padding: 10px;
+  }
+
+  .load {
+    background-color: #0282f9;
+    color: white;
+    padding: 8px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
   }
 }
 
 .bg-blue {
   background-color: blue;
+  margin-top: 20px;
 }
 
 .container {
-  padding: 45px;
 
+  padding: 20px;
   .immagine {
-    max-height: 60px;
+    max-height: 45px;
+    margin: 20px;
+
+
   }
 
+  .text-img {
+    font-size: 10px;
+    
+  }
 }
 
 footer {

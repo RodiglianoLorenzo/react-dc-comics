@@ -21,7 +21,9 @@ export default function AppHeader(){
             <nav>
                <ul>
                 {links.map((link)=>
-                    <a key={link.id} href={link.url}>{link.text}</a>
+                    <li key={link.id}>
+                      <a className={link.id === 2 ? 'active' : ''} href={link.url}>{link.text}</a>  
+                    </li>
                 )}
                </ul>
             </nav>

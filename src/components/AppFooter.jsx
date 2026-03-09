@@ -60,7 +60,7 @@ export default function AppHeader() {
                                 <h4>SHOP</h4>
                                 <ul>
                                     {shopLinks.map((shop) =>
-                                        <li>
+                                        <li key={shop.id}>
                                             <a key={shop.id} href={shop.url}>{shop.menu}</a>
                                         </li>
                                     )}
@@ -73,7 +73,7 @@ export default function AppHeader() {
                             <h4>DC</h4>
                             <ul>
                                 {footerLinks.map((link) =>
-                                    <li>
+                                    <li key={link.id}>
                                         <a key={link.id} href={link.url}>{link.menu}</a>
                                     </li>
                                 )}
@@ -84,7 +84,7 @@ export default function AppHeader() {
                             <h4>SITES</h4>
                             <ul>
                                 {dcLinks.map((dc) =>
-                                    <li>
+                                    <li key={dc.id}>
                                         <a key={dc.id} href={dc.url}>{dc.menu}</a>
                                     </li>
                                 )}

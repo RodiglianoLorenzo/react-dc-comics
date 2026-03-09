@@ -162,40 +162,44 @@ export default function AppMain() {
     return (
         <main>
             <div className='teentitans'></div>
-            
+
             <div className='bg-black'>
                 <div className="container">
+                   
+                    <div className="Series">CURRENT SERIES</div>
                     <div className='row '>
-                        <div className='col text-white'>
-                            {comics.map((comic)=>
-                                <img className='imgthumb' key={comic.id} src={comic.thumb}></img>
-                            )}
-                        </div>
+                        {comics.map((comic) =>
+                            <div className="col bg-black col-6 col-sm-4 col-md-3 col-lg-2">
+                                <img className='imgthumb img-fluid' key={comic.id} src={comic.thumb}></img>
+                                <p>{comic.title}</p>
+                            </div>
+                        )}
                     </div>
+                    <button className='load'>LOAD MORE</button>
                 </div>
+
             </div>
-            <div className='bg-primary'>
+            <div className='bg-primary text-white'>
                 <div className="container">
                     <div className='row' >
-                        <div className='col'>
-                            <img className='immagine' src={DigitalComics} alt="digital Comics" /> <span>Digital Comics</span>
+                        <div className='col-6 col-md-2'>
+                            <img className='immagine' src={DigitalComics} alt="digital Comics" /> <span className='text-img'>DIGITAL COMICS</span>
                         </div>
-                        <div className='col'>
-                            <img className='immagine' src={DcMerchandise} alt="digital Comics" /> <span>Digital Comics</span>
+                        <div className='col-6 col-md-2'>
+                            <img className='immagine' src={DcMerchandise} alt="digital Comics" /> <span className='text-img'>DC MERCHANDISE</span>
                         </div>
-                        <div className='col'>
-                            <img className='immagine' src={SubScription} alt="digital Comics" /> <span>Digital Comics</span>
+                        <div className='col-6 col-md-2'>
+                            <img className='immagine' src={SubScription} alt="digital Comics" /> <span className='text-img'>SUBSCRIPRION</span>
                         </div>
-                        <div className='col'>
-                            <img className='immagine' src={ComicShopLocator} alt="digital Comics" /> <span>Digital Comics</span>
+                        <div className='col-6 col-md-2'>
+                            <img className='immagine' src={ComicShopLocator} alt="digital Comics" /> <span className='text-img'>COMIC SHOP LOCATOR</span>
                         </div>
-                        <div className='col'>
-                            <img className='immagine' src={DcPowerVisa} alt="digital Comics" /> <span>Digital Comics</span>
+                        <div className='col-6 col-md-2'>
+                            <img className='immagine' src={DcPowerVisa} alt="digital Comics" /> <span className='text-img'>DC POWER VISA</span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </main>
     )
 }
