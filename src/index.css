@@ -29,6 +29,10 @@ header {
     color: cyan;
     border-bottom: 3px solid cyan;
   }
+
+  .list {
+    list-style-type: none;
+  }
 }
 
 .bg-black {

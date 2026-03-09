@@ -1,6 +1,45 @@
 import DcLogoBg from '/dc-logo-bg.png'
 
+
 export default function AppHeader() {
+
+    const menuItems = [
+        { id: 1, menu: "Characters", url: "#" },
+        { id: 2, menu: "Comics", url: "#" },
+        { id: 3, menu: "Movies", url: "#" },
+        { id: 4, menu: "TV", url: "#" },
+        { id: 5, menu: "Games", url: "#" },
+        { id: 6, menu: "Videos", url: "#" },
+        { id: 7, menu: "News", url: "#" }
+    ];
+
+    const shopLinks = [
+        { id: 1, menu: "Shop DC", url: "#" },
+        { id: 2, menu: "Shop DC Collectibles", url: "#" }
+    ];
+
+    const footerLinks = [
+        { id: 1, menu: "Terms Of Use", url: "#" },
+        { id: 2, menu: "Privacy policy (New)", url: "#" },
+        { id: 3, menu: "Ad Choices", url: "#" },
+        { id: 4, menu: "Advertising", url: "#" },
+        { id: 5, menu: "Jobs", url: "#" },
+        { id: 6, menu: "Subscriptions", url: "#" },
+        { id: 7, menu: "Talent Workshops", url: "#" },
+        { id: 8, menu: "CPSC Certificates", url: "#" },
+        { id: 9, menu: "Ratings", url: "#" },
+        { id: 10, menu: "Shop Help", url: "#" },
+        { id: 11, menu: "Contact Us", url: "#" }
+    ];
+
+    const dcLinks = [
+        { id: 1, menu: "DC", url: "#" },
+        { id: 2, menu: "MAD Magazine", url: "#" },
+        { id: 3, menu: "DC Kids", url: "#" },
+        { id: 4, menu: "DC Universe", url: "#" },
+        { id: 5, menu: "DC Power Visa", url: "#" }
+    ];
+
     return (
         <footer>
             <div className='UpFooter'>
@@ -9,44 +48,47 @@ export default function AppHeader() {
 
                         <nav className="Footer-nav col-2">
                             <h4>DC COMICS</h4>
-                            <a href="">Characters</a>
-                            <a href="">Comics</a>
-                            <a href="">Movies</a>
-                            <a href="">TV</a>
-                            <a href="">Games</a>
-                            <a href="">Videos</a>
-                            <a href="">News</a>
+                            <ul className='list'>
+                                {menuItems.map((item) =>
+                                    <li>
+                                        <a key={item.id} href={item.url}>{item.menu}</a>
+                                    </li>
+                                )}
+                            </ul>
 
                             <nav className="Footer-nav col-2">
                                 <h4>SHOP</h4>
-                                <a href="">Shop DC</a>
-                                <a href="">Shop DC Collectibles</a>
+                                <ul>
+                                    {shopLinks.map((item) =>
+                                        <li>
+                                            <a key={item.id} href={item.url}>{item.menu}</a>
+                                        </li>
+                                    )}
+                                </ul>
                             </nav>
 
                         </nav>
 
                         <nav className="Footer-nav col-2">
                             <h4>DC</h4>
-                            <a href="">Terms Of Use</a>
-                            <a href="">Privacy policy (New)</a>
-                            <a href="">Ad Choices</a>
-                            <a href="">Advertising</a>
-                            <a href="">Jobs</a>
-                            <a href="">Subscriptions</a>
-                            <a href="">Talent Workshops</a>
-                            <a href="">CPSC Certificates</a>
-                            <a href="">Ratings</a>
-                            <a href="">Shop Help</a>
-                            <a href="">Contact Us</a>
+                            <ul>
+                                {footerLinks.map((item) =>
+                                    <li>
+                                        <a key={item.id} href={item.url}>{item.menu}</a>
+                                    </li>
+                                )}
+                            </ul>
                         </nav>
 
                         <nav className="Footer-nav col-2">
                             <h4>SITES</h4>
-                            <a href="">DC</a>
-                            <a href="">MAD Magazine</a>
-                            <a href="">DC Kids</a>
-                            <a href="">DC Universe</a>
-                            <a href="">DC Power Visa</a>
+                            <ul>
+                                {dcLinks.map((item) =>
+                                    <li>
+                                        <a key={item.id} href={item.url}>{item.menu}</a>
+                                    </li>
+                                )}
+                            </ul>
                         </nav>
 
                         <div className="col-4 d-flex justify-content-end align-items-start">
