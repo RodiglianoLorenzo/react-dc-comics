@@ -49,19 +49,19 @@ export default function AppHeader() {
                         <nav className="Footer-nav col-2">
                             <h4>DC COMICS</h4>
                             <ul className='list'>
-                                {menuItems.map((item) =>
-                                    <li>
-                                        <a key={item.id} href={item.url}>{item.menu}</a>
+                                {menuItems.map((item) => (
+                                    <li key={item.id}>
+                                        <a href={item.url}>{item.menu}</a>
                                     </li>
-                                )}
+                                ))}
                             </ul>
 
                             <nav className="Footer-nav col-2">
                                 <h4>SHOP</h4>
                                 <ul>
-                                    {shopLinks.map((item) =>
+                                    {shopLinks.map((shop) =>
                                         <li>
-                                            <a key={item.id} href={item.url}>{item.menu}</a>
+                                            <a key={shop.id} href={shop.url}>{shop.menu}</a>
                                         </li>
                                     )}
                                 </ul>
@@ -72,9 +72,9 @@ export default function AppHeader() {
                         <nav className="Footer-nav col-2">
                             <h4>DC</h4>
                             <ul>
-                                {footerLinks.map((item) =>
+                                {footerLinks.map((link) =>
                                     <li>
-                                        <a key={item.id} href={item.url}>{item.menu}</a>
+                                        <a key={link.id} href={link.url}>{link.menu}</a>
                                     </li>
                                 )}
                             </ul>
@@ -83,9 +83,9 @@ export default function AppHeader() {
                         <nav className="Footer-nav col-2">
                             <h4>SITES</h4>
                             <ul>
-                                {dcLinks.map((item) =>
+                                {dcLinks.map((dc) =>
                                     <li>
-                                        <a key={item.id} href={item.url}>{item.menu}</a>
+                                        <a key={dc.id} href={dc.url}>{dc.menu}</a>
                                     </li>
                                 )}
                             </ul>

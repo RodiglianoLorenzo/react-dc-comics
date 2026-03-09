@@ -35,9 +35,23 @@ header {
   }
 }
 
+.teentitans {
+  background-image: url('/jumbotron.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 520px;
+}
+
 .bg-black {
   background-color: black;
   padding: 5px;
+  
+  .imgthumb{
+    max-width: 150px;
+    max-height: auto;
+    padding: 10px;
+  }
 }
 
 .bg-blue {

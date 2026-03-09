@@ -1,5 +1,4 @@
 import imglogo from '/dc-logo.png'
-import dcComics from '../assets/dc-comics-2/comics'
 
 export default function AppHeader(){
 
@@ -27,7 +26,6 @@ export default function AppHeader(){
                </ul>
             </nav>
 
-            <img src={dcComics} alt="Dc logo"/>
         </header>
     )
 
