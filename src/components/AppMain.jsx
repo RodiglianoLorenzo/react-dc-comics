@@ -3,6 +3,7 @@ import DcMerchandise from '/buy-comics-merchandise.png'
 import SubScription from '/buy-comics-subscriptions.png'
 import ComicShopLocator from '/buy-comics-shop-locator.png'
 import DcPowerVisa from '/buy-dc-power-visa.svg'
+import AppComics from './AppComics'
 export default function AppMain() {
 
     const comics = [
@@ -167,16 +168,13 @@ export default function AppMain() {
                 <div className="container">
                     <div className="Series">CURRENT SERIES</div>
                     <div className='row '>
-                        {comics.map((comic) => (
-                            <div key={comic.id} className="col bg-black col-6 col-sm-4 col-md-3 col-lg-2">
-                                <img className='imgthumb' src={comic.thumb} alt={comic.title} />
-                                <p>{comic.title}</p>
-                            </div>
-                        ))}
+                       {comics.map((comic)=>
+                        <AppComics key={comic.id} comic={comic}/>
+                        
+                    )}
                     </div>
                     <button className='load'>LOAD MORE</button>
                 </div>
-
             </div>
             <div className='bg-primary text-white'>
                 <div className="container">

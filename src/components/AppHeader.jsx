@@ -1,6 +1,6 @@
 import imglogo from '/dc-logo.png'
 
-export default function AppHeader(){
+export default function AppHeader() {
 
     const links = [
         { id: 1, text: "CHARACTERS", url: "#" },
@@ -15,19 +15,20 @@ export default function AppHeader(){
         { id: 10, text: "SHOP", url: "#" }
     ];
 
-    return(
+    return (
         <header>
             <img src={imglogo} alt="logo" />
             <nav>
-               <ul>
-                {links.map((link)=>
-                    <li key={link.id}>
-                      <a className={link.id === 2 ? 'active' : ''} href={link.url}>{link.text}</a>  
-                    </li>
-                )}
-               </ul>
+                <div className='row'>
+                    <ul>
+                        {links.map((link) =>
+                            <li key={link.id}>
+                                <a className={link.id === 2 ? 'active' : ''} href={link.url}>{link.text}</a>
+                            </li>
+                        )}
+                    </ul>
+                </div>
             </nav>
-
         </header>
     )
 
